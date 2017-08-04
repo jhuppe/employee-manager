@@ -14,16 +14,18 @@ class EmployeeEditor extends Component {
 
   // handleChange
 
-  // save
+  save() {
+    
+  }
 
   // cancel
-  
+
   render() {
     return (
       <div className="infoCard">
-        { 
+        {
           this.state.employee
-          ? 
+          ?
           <div>
             <span id="employeeID"> ID: { this.state.employee.id } </span>
             <p id="employeeTitle"> { this.state.originalEmployee.name } </p>
@@ -41,7 +43,7 @@ class EmployeeEditor extends Component {
           :
           <p id="noEmployee"> No Employee Selected </p>
         }
-       
+
       </div>
     )
   }
